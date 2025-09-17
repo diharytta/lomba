@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lahelu - Meme Indonesia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Overlay for mobile -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="logo">
+            <i class="fas fa-laugh-beam"></i>
+            <span>Lahelu</span>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link active" data-page="home">
+                    <i class="fas fa-home"></i>
+                    <span>Beranda</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-page="trending">
+                    <i class="fas fa-fire"></i>
+                    <span>Trending</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-page="topics">
+                    <i class="fas fa-th-large"></i>
+                    <span>Topik</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-page="latest">
+                    <i class="fas fa-clock"></i>
+                    <span>Terbaru</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-page="favorites">
+                    <i class="fas fa-heart"></i>
+                    <span>Favorit</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-page="upload">
+                    <i class="fas fa-upload"></i>
+                    <span>Upload</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-page="profile">
+                    <i class="fas fa-user"></i>
+                    <span>Profil</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-page="settings">
+                    <i class="fas fa-cog"></i>
+                    <span>Pengaturan</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Cari meme...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="user-menu">
+                <button><i class="fas fa-bell"></i></button>
+                <button><i class="fas fa-envelope"></i></button>
+                <div class="user-avatar">U</div>
+            </div>
+        </header>
+
+        <!-- Content Area -->
+        <main class="content">
+            <div class="section-header">
+                <h1 class="section-title" id="pageTitle">Meme Terbaru</h1>
+                <button class="create-btn">
+                    <i class="fas fa-plus"></i>
+                    <span>Buat Meme</span>
+                </button>
+            </div>
+            
+            <div class="categories" id="categoriesContainer">
+                <button class="category-btn active">Semua</button>
+                <button class="category-btn">Politik</button>
+                <button class="category-btn">Olahraga</button>
+                <button class="category-btn">Sekolah</button>
+                <button class="category-btn">Kampus</button>
+                <button class="category-btn">Relationship</button>
+                <button class="category-btn">Gaming</button>
+            </div>
+            
+            <div class="meme-grid" id="memeGrid">
+                <!-- Meme cards akan di-generate oleh JavaScript -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Floating Action Button -->
+    <button class="fab" id="fab">
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <!-- Bottom Navigation Bar (like TikTok) -->
+    <div class="bottom-nav">
+        <a href="#" class="bottom-nav-item active" data-page="home">
+            <i class="fas fa-home"></i>
+            <span>Beranda</span>
+        </a>
+        <a href="#" class="bottom-nav-item" data-page="trending">
+            <i class="fas fa-fire"></i>
+            <span>Trending</span>
+        </a>
+        <a href="#" class="bottom-nav-item" data-page="topics">
+            <i class="fas fa-th-large"></i>
+            <span>Topik</span>
+        </a>
+        <a href="#" class="bottom-nav-item" data-page="latest">
+            <i class="fas fa-clock"></i>
+            <span>Terbaru</span>
+        </a>
+        <a href="#" class="bottom-nav-item" data-page="profile">
+            <i class="fas fa-user"></i>
+            <span>Profil</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tentang Lahelu</h3>
+                <p>Platform terbaik untuk menemukan dan berbagi meme khas Indonesia. Bergabunglah dengan komunitas kami dan nikmati humor sehari-hari!</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Menu Cepat</h3>
+                <p><a href="#">Beranda</a></p>
+                <p><a href="#">Trending</a></p>
+                <p><a href="#">Topik</a></p>
+                <p><a href="#">Upload Meme</a></p>
+                <p><a href="#">Kontak</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Kategori Populer</h3>
+                <p><a href="#">Meme Politik</a></p>
+                <p><a href="#">Meme Olahraga</a></p>
+                <p><a href="#">Meme Sekolah</a></p>
+                <p><a href="#">Meme Kampus</a></p>
+                <p><a href="#">Meme Relationship</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Hubungi Kami</h3>
+                <p>Email: info@lahelu.com</p>
+                <p>Telepon: (021) 1234-5678</p>
+                <p>Alamat: Jakarta, Indonesia</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Lahelu. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
