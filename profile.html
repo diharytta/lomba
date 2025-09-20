@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segar - Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Segar Logo" width="40">
+            <span>Segar</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="profile.html" class="active">Profile</a>
+        </nav>
+        <div class="user-menu">
+            <a href="login.html">Logout</a>
+        </div>
+    </header>
+
+    <main class="profile-container">
+        <div class="profile-header">
+            <div class="avatar large">
+                <img src="img/profil.jpg" alt="John Doe">
+            </div>
+            <div class="profile-info">
+                <h2>hamdi</h2>
+                <p>@hamdi123</p>
+                <p>Pembaca meme</p>
+                <div class="profile-stats">
+                    <span><strong>128</strong> Postingan</span>
+                    <span><strong>1.2K</strong> Pengikut</span>
+                    <span><strong>356</strong> Mengikuti</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-tabs">
+            <button class="tab-btn active">Postingan</button>
+            <button class="tab-btn">Tersimpan</button>
+            <button class="tab-btn">Tagged</button>
+        </div>
+
+        <div class="posts-grid">
+            <div class="post-card">
+                <div class="post-preview">
+                    <img src="img/profil.jpg" alt="Post Image">
+                </div>
+                <div class="post-stats">
+                    <span>❤️ 24</span>
+                    <span>💬 5</span>
+                </div>
+            </div>
+            <div class="post-card">
+                <div class="post-preview">
+                    <img src="img/meme4.jpg" alt="Post Image">
+                </div>
+                <div class="post-stats">
+                    <span>❤️ 42</span>
+                    <span>💬 12</span>
+                </div>
+            </div>
+            <div class="post-card">
+                <div class="post-preview">
+                    <img src="img/meme3.jpg" alt="Post Image">
+                </div>
+                <div class="post-stats">
+                    <span>❤️ 18</span>
+                    <span>💬 3</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <svg class="nav-icon" viewBox="0 0 24 24">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+            <span>Home</span>
+        </a>
+        <a href="explore.html" class="nav-item">
+            <svg class="nav-icon" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </svg>
+            <span>Search</span>
+        </a>
+        <a href="#" class="nav-item" id="create-post-btn">
+            <svg class="nav-icon" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+            </svg>
+            <span>Create</span>
+        </a>
+        <a href="#" class="nav-item">
+            <svg class="nav-icon" viewBox="0 0 24 24">
+                <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
+            </svg>
+            <span>Notifications</span>
+        </a>
+        <a href="profile.html" class="nav-item active">
+            <svg class="nav-icon" viewBox="0 0 24 24">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+            <span>Profile</span>
+        </a>
+    </nav>
+
+    <footer>
+        <p>&copy; Semua Aset Segar Dilindungi Oleh DEV 2025.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
